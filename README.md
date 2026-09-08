@@ -40,7 +40,7 @@ The local URL uses `/sjd-public-engagement/`. React + Vite builds static files i
 
 ## Deployment
 
-Push to `main` to run `.github/workflows/deploy.yml`. GitHub Actions installs locked dependencies, runs lint, types and unit tests, builds, then publishes `dist/client` to GitHub Pages. Pages publishing source is **GitHub Actions**. Keep `vite.config.ts` and the canonical URL aligned if the repository is renamed.
+Push to `main` to run `.github/workflows/deploy.yml`. GitHub Actions installs locked dependencies, runs lint, types and unit tests, builds, then publishes `dist/client` to GitHub Pages. The workflow packages the static output as a Pages-compatible tar archive and uses the current Node 24 upload action. This replaces the inherited uploader after repeated stalled uploads. Pages publishing source is **GitHub Actions**. Keep `vite.config.ts` and the canonical URL aligned if the repository is renamed.
 
 The retained `.openai/hosting.json` describes static output only. Hosting remains GitHub Pages by the owner’s explicit choice; no additional Sites deployment is needed.
 

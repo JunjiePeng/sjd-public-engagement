@@ -11,6 +11,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -25,9 +26,22 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
-      - uses: actions/upload-pages-artifact@v3
+      # Preserve the Pages tar format, using the current Node 24 uploader.
+      - name: Package GitHub Pages website
+        run: >-
+          tar --dereference --hard-dereference
+          --directory dist/client
+          --create --file "$RUNNER_TEMP/artifact.tar"
+          --exclude=.git --exclude=.github .
+      - name: Upload GitHub Pages website
+        uses: actions/upload-artifact@v7.0.1
+        timeout-minutes: 3
         with:
-          path: dist/client
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
+          compression-level: 0
   deploy:
     needs: build
     runs-on: ubuntu-latest
