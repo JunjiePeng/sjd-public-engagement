@@ -42,7 +42,9 @@ Use readable type, keyboard-operable controls, strong contrast, mobile layouts a
 
 ## Current scope
 
-The repository starts with a responsive introductory page, expandable questions, source links, these planning documents and GitHub Pages deployment. Detailed body maps, quizzes, stories and age-specific learning paths remain planned work.
+Version 0.2.0 continues the existing GitHub repository in the dedicated `SjD PPIE website` folder. It implements topic explanations, separate childhood learning paths, appointment questions, a misconception quiz, a PPIE introduction and established resource links. See `content-review.md` for the source map and outstanding review; the live site clearly identifies its draft status.
+
+The body map, real patient stories and project-specific involvement recruitment remain future options. No claims of clinical approval or patient co-design are made.
 
 ## Sources checked on 8 September 2026
 

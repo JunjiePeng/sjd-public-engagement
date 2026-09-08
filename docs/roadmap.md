@@ -1,32 +1,30 @@
 # Development roadmap
 
-## Foundation
+## Foundation and working educational site
 
-- [x] Separate project folder and source scaffold.
-- [x] Save audience, themes and proposed content approach.
-- [x] Initial page with expandable questions and established resource links.
-- [x] GitHub Pages build and deployment workflow.
+- [x] Dedicated PPIE working folder, with existing Git history and GitHub Pages address.
+- [x] Responsive learning site with source links and transparent review status.
+- [x] Interactive SjD topic explanations.
+- [x] Young-person and caregiver learning paths.
+- [x] Test and appointment explanations.
+- [x] Four-question learning quiz, explanations, review and restart.
+- [x] PPIE introduction and links to external resources and opportunities.
+- [x] Automated code, type, quiz-state and deployment checks.
 
-## Co-design and review
+## Co-design, clinical review and evaluation
 
-- [ ] Confirm cSjD terminology and the first priority audience.
-- [ ] Discuss the questions that matter most with patients and parents.
-- [ ] Identify clinical and patient reviewers; agree a review schedule.
-- [ ] Review the introductory page for accuracy, clarity and accessibility.
+- [ ] Confirm cSjD terminology and audience priorities with the owner and intended users.
+- [ ] Identify adult and paediatric clinical reviewers and patient/family contributors.
+- [ ] Review all educational content and the quiz answer key.
+- [ ] Evaluate clarity and usefulness with young people, parents and adults with SjD.
+- [ ] Complete browser accessibility and usability testing, including keyboard, screen reader, narrow screens and 200% text enlargement.
+- [ ] Establish an editorial owner and review schedule.
+- [ ] Agree a contact and involvement process before opening project-specific recruitment.
 
-## First complete learning module
+## Future options, subject to co-design
 
-- [ ] Choose a bounded topic, provisionally “Growing up with Sjögren’s”.
-- [ ] Write and review content for young people and caregivers.
-- [ ] Build one meaningful interaction, such as a misconception quiz.
-- [ ] Test understanding and navigation with the intended audience.
-- [ ] Publish reviewed content with source and review dates.
+- [ ] An accessible body map with a complete text alternative.
+- [ ] Patient stories with informed permission and a review/removal process.
+- [ ] Additional modules guided by questions from patients and families.
 
-## Further development
-
-- [ ] Explore an accessible body map and everyday-life scenarios.
-- [ ] Develop test and appointment explanations.
-- [ ] Invite and review patient stories through an agreed contributor process.
-- [ ] Add a way for visitors to suggest future learning topics if needed.
-
-The complete public education website remains in development. Deployment configuration and an initial page do not mean clinical review or evaluation is complete.
+Deployment of the educational prototype does not mean clinical review or patient evaluation is complete.

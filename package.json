@@ -1,6 +1,6 @@
 {
   "name": "sjd-public-engagement",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -10,7 +10,9 @@
     "build": "vite build",
     "start": "vite preview",
     "lint": "oxlint app lib main.tsx vite.config.ts",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "19.2.6",

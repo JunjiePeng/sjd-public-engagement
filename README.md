@@ -1,50 +1,51 @@
-# Understanding Sjögren’s
+# Understanding Sjögren’s — PPIE website
 
-A public learning and engagement website about Sjögren’s disease (SjD) and childhood-onset Sjögren’s disease (cSjD).
+An independent public learning website about Sjögren’s disease (SjD) and childhood-onset Sjögren’s disease (cSjD), for patients, families, young people and the wider public.
 
-- Website: https://JunjiePeng.github.io/sjd-public-engagement/
-- Repository: https://github.com/JunjiePeng/sjd-public-engagement
+- [Live website](https://junjiepeng.github.io/sjd-public-engagement/)
+- [GitHub repository](https://github.com/JunjiePeng/sjd-public-engagement)
 - [Project brief](docs/project-brief.md)
-- [Development roadmap](docs/roadmap.md)
+- [Roadmap](docs/roadmap.md)
+- [Content sources and review status](docs/content-review.md)
 
-## Current version
+## Working project
 
-An initial educational page with a brief introduction, expandable questions and links to established resources. It is an early starting point, not the complete planned learning experience, and has not received independent clinical or patient review.
+This checkout at `/Users/pengjunjie/Documents/ChatGPT/SjD PPIE website` is the dedicated working project, continuing the existing `sjd-public-engagement` repository and its history. The previous starter remains in the shared SjD websites folder. Develop future PPIE changes here to avoid diverging working copies. The publications website remains a separate project.
 
-This project is separate from the personal research dashboard, with its own content, visual direction and release schedule. Both this repository and the website are public.
+## Current release
 
-## Local development
+- Five interactive explanations covering the basics, dryness, fatigue, pain and wider effects.
+- Separate young-person and parent/carer learning paths with everyday-life and appointment prompts.
+- Expandable explanations of diagnostic tests.
+- A four-question misconception quiz, immediate explanations, completion review and restart.
+- An introduction to involvement, engagement and study participation, with genuine external opportunities.
+- Source links, review status, mobile navigation, keyboard-accessible components and reduced-motion support.
 
-Requires Node.js 22.13 or newer and pnpm 11.19.0.
+This release is a working educational prototype. It has not had independent clinical or patient review, and must not be described as clinically approved or co-designed. Patient stories and project recruitment are not active. The website does not diagnose, give personalised treatment recommendations or collect health information. No analytics or browser persistence are implemented; quiz answers clear on reload. The hosting provider may process technical access logs.
+
+## Develop and validate
+
+Node.js >=22.13 and pnpm 11.19.0 are required.
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev
-```
-
-Open the URL printed by the server, with `/sjd-public-engagement/` appended if necessary.
-
-```sh
 pnpm lint
+pnpm typecheck
+pnpm test
 pnpm build
 ```
 
-The React + Vite application builds a static site into `dist/client`. `vite.config.ts` sets the GitHub Pages path prefix.
+The local URL uses `/sjd-public-engagement/`. React + Vite builds static files into `dist/client`. The package manager and dependency lockfile are retained from the initial project. Tests cover answer locking, question progression, completion, scoring, restart and source references. Lint covers authored application code; the untouched starter component catalogue is excluded. Type checking includes the complete source tree.
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml` to install locked dependencies, lint, build and deploy the static site. GitHub Pages must use **GitHub Actions** as its publishing source.
+Push to `main` to run `.github/workflows/deploy.yml`. GitHub Actions installs locked dependencies, runs lint, types and unit tests, builds, then publishes `dist/client` to GitHub Pages. Pages publishing source is **GitHub Actions**. Keep `vite.config.ts` and the canonical URL aligned if the repository is renamed.
 
-The retained `.openai/hosting.json` only describes static output; hosting is deliberately GitHub Pages as requested by the owner.
+The retained `.openai/hosting.json` describes static output only. Hosting remains GitHub Pages by the owner’s explicit choice; no additional Sites deployment is needed.
 
-## Content
+## Editing content
 
-Initial sources were checked on 8 September 2026. Source checking is not clinical endorsement. See the project brief for the review process to establish before expanding the educational content.
+Edit educational content and source references in `app/learning-content.ts`; layout and brief project explanations are in `app/home-content.tsx`. Update `docs/content-review.md` and the visible source-check date when checking sources again. Do not present that date as clinical sign-off. Clinical and lived-experience review are outstanding next steps.
 
-- [NIAMS: Sjögren’s disease](https://www.niams.nih.gov/health-topics/sjogrens-disease)
-- [NHS: Sjögren’s syndrome](https://www.nhs.uk/conditions/sjogrens-syndrome/)
-- [Sjögren’s Foundation: Sjögren’s in children](https://sjogrens.org/living-with-sjogrens/sjogrens-in-children)
-
-No affiliation with or endorsement by these organisations is claimed.
-
-The lint command checks authored application code and configuration. The untouched generated UI catalogue is excluded from lint because the starter contains pre-existing rule violations.
+`public/images/community.jpg` is an original AI-generated editorial illustration, created for this project on 8 September 2026. It depicts fictional people, not patients, contributors or endorsers. It must not be presented as a patient photograph or testimonial.
