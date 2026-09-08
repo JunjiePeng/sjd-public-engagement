@@ -5,7 +5,6 @@ import {
   ArrowUpRight,
   BookOpen,
   Check,
-  HeartHandshake,
   Menu,
   RotateCcw,
   X,
@@ -59,13 +58,12 @@ function Quiz() {
     <section className="quiz-section" id="quiz" aria-labelledby="quiz-title">
       <div className="shell quiz-layout">
         <div className="quiz-intro">
-          <span className="eyebrow">A little learning, together</span>
+          <span className="eyebrow">Sjögren’s quiz</span>
           <h2 id="quiz-title">
-            Let’s clear up a few
+            Common questions
             <br />
-            <em>misconceptions.</em>
+            <em>about Sjögren’s.</em>
           </h2>
-          <p>Four questions. No timer. An explanation after every answer.</p>
           <p className="quiz-note">
             This is a learning activity. It cannot tell you whether you have
             Sjögren’s.
@@ -85,13 +83,13 @@ function Quiz() {
           </div>
           {state.finished ? (
             <>
-              <p className="eyebrow">Learning complete</p>
+              <p className="eyebrow">Quiz complete</p>
               <h3 ref={heading} tabIndex={-1}>
-                You explored all four questions.
+                Your answers
               </h3>
               <p>
                 You answered {scoreQuiz(state, questions)} of {questions.length}{' '}
-                correctly. You can revisit the explanations below.
+                correctly.
               </p>
               <Accordion className="questions quiz-review">
                 {questions.map((q, i) => (
@@ -107,7 +105,7 @@ function Quiz() {
                 ))}
               </Accordion>
               <Button className="action-button" onClick={restart}>
-                <RotateCcw size={17} aria-hidden="true" /> Try again
+                <RotateCcw size={17} aria-hidden="true" /> Restart quiz
               </Button>
             </>
           ) : (
@@ -151,8 +149,8 @@ function Quiz() {
                     <p>
                       <strong>
                         {selected === question.correct
-                          ? 'That’s right.'
-                          : 'A useful thing to know:'}
+                          ? 'Correct.'
+                          : 'Not quite.'}
                       </strong>{' '}
                       {question.explanation}
                     </p>
@@ -166,7 +164,7 @@ function Quiz() {
                   onClick={changeQuestion}
                 >
                   {state.index === questions.length - 1
-                    ? 'See what you learned'
+                    ? 'View results'
                     : 'Next question'}
                   <ArrowRight size={18} aria-hidden="true" />
                 </Button>
@@ -235,26 +233,24 @@ export default function Home() {
         <section className="shell hero" aria-labelledby="hero-title">
           <div className="hero-copy">
             <p className="eyebrow">
-              <span className="little-line" /> For patients, families & the
-              curious
+              <span className="little-line" /> For people with Sjögren’s & their
+              families
             </p>
             <h1 id="hero-title">
               Understanding
               <br />
-              Sjögren’s.
-              <br />
-              <em>Together.</em>
+              <em>Sjögren’s.</em>
             </h1>
             <p className="hero-lead">
-              Clear explanations. Space for questions. Explore Sjögren’s
-              disease, at every age and at your own pace.
+              Information about Sjögren’s disease and childhood-onset Sjögren’s,
+              for people living with the condition, their families and the wider
+              public.
             </p>
             <a className="primary-link" href="#learn">
-              Let’s start learning <ArrowDown size={18} aria-hidden="true" />
+              About Sjögren’s <ArrowDown size={18} aria-hidden="true" />
             </a>
             <a className="text-link" href="#childhood">
-              Looking for childhood SjD?{' '}
-              <ArrowRight size={16} aria-hidden="true" />
+              Children & families <ArrowRight size={16} aria-hidden="true" />
             </a>
           </div>
           <div className="hero-aside">
@@ -267,14 +263,6 @@ export default function Home() {
                 fetchPriority="high"
               />
             </div>
-            <div className="hero-caption">
-              <HeartHandshake size={22} aria-hidden="true" />
-              <p>
-                Different experiences.
-                <br />
-                <strong>A shared place to understand.</strong>
-              </p>
-            </div>
           </div>
         </section>
         <div className="review-strip">
@@ -282,7 +270,9 @@ export default function Home() {
             <BookOpen size={17} aria-hidden="true" />
             <p>
               An independent educational project.{' '}
-              <a href="#about">Clinical and patient review is still to come.</a>
+              <a href="#about">
+                Review by clinicians and people with Sjögren’s is pending.
+              </a>
             </p>
           </div>
         </div>
@@ -293,7 +283,7 @@ export default function Home() {
         >
           <div className="section-heading">
             <div>
-              <p className="eyebrow">01 / Get to know Sjögren’s</p>
+              <p className="eyebrow">01 / Understanding Sjögren’s</p>
               <h2 id="learn-title">
                 More than dry eyes
                 <br />
@@ -302,7 +292,7 @@ export default function Home() {
             </div>
             <p>
               Sjögren’s disease (say “SHOW-grins”), or SjD, can affect people in
-              different ways. Start with the basics, then explore a topic.
+              different ways.
             </p>
           </div>
           <Tabs defaultValue="basics" className="topic-tabs">
@@ -334,7 +324,6 @@ export default function Home() {
                 <div className="topic-detail">
                   <p>{topic.body}</p>
                   <div className="takeaway">
-                    <span>Keep in mind</span>
                     <p>{topic.takeaway}</p>
                   </div>
                   <Source id={topic.source} />
@@ -354,19 +343,20 @@ export default function Home() {
         >
           <div className="shell childhood-layout">
             <div className="childhood-intro">
-              <p className="eyebrow">02 / Growing up with Sjögren’s</p>
+              <p className="eyebrow">02 / Children & families</p>
               <h2 id="childhood-title">
-                Small steps.
+                Sjögren’s
                 <br />
-                <em>Big questions.</em>
+                <em>in childhood.</em>
               </h2>
               <p>
                 Childhood-onset Sjögren’s disease (cSjD) means Sjögren’s that
-                begins in childhood. Young people and the adults supporting them
-                may have different questions.
+                begins in childhood.
               </p>
               <div className="childhood-fact">
-                <span className="fact-label">Did you know?</span>
+                <span className="fact-label">
+                  How childhood Sjögren’s can differ
+                </span>
                 <p>
                   Children may have less obvious dryness than adults. Repeated
                   swelling of the glands near the cheeks can be a feature.
@@ -392,7 +382,6 @@ export default function Home() {
                 >
                   <p className="eyebrow">{path.kicker}</p>
                   <h3>{path.heading}</h3>
-                  <p>{path.intro}</p>
                   <Accordion
                     className="questions"
                     defaultValue={[path.items[0].id]}
@@ -403,7 +392,7 @@ export default function Home() {
                         <AccordionContent>
                           <p>{item.body}</p>
                           <div className="conversation-prompt">
-                            <span>A question to try</span>
+                            <span>A question you could ask</span>
                             <p>“{item.prompt}”</p>
                           </div>
                         </AccordionContent>
@@ -427,7 +416,7 @@ export default function Home() {
           aria-labelledby="appointments-title"
         >
           <div className="appointments-intro">
-            <p className="eyebrow">03 / Making sense of appointments</p>
+            <p className="eyebrow">03 / Tests & appointments</p>
             <h2 id="appointments-title">
               What are the
               <br />
@@ -466,25 +455,23 @@ export default function Home() {
         >
           <div className="section-heading">
             <div>
-              <p className="eyebrow">
-                04 / Patient & public involvement and engagement
-              </p>
+              <p className="eyebrow">04 / Involvement & engagement</p>
               <h2 id="involvement-title">
-                Lived experience
+                Shaping research
                 <br />
-                belongs in the conversation.
+                through lived experience.
               </h2>
             </div>
             <p>
-              PPIE is about connecting research with the people it affects.
-              There are different ways to contribute, and you can choose what
-              feels right for you.
+              Patient and public involvement and engagement (PPIE) brings the
+              knowledge and experience of people affected by a condition into
+              research.
             </p>
           </div>
           <div className="involvement-grid">
             <article>
               <span className="involvement-label">Involvement</span>
-              <h3>Help shape the work</h3>
+              <h3>Shape research priorities</h3>
               <p>
                 Help choose research questions, review information or advise a
                 research team. Your perspective can influence how research is
@@ -495,8 +482,8 @@ export default function Home() {
               <span className="involvement-label">Engagement</span>
               <h3>Learn and exchange ideas</h3>
               <p>
-                Explore explanations, join a discussion or ask questions.
-                Learning can go both ways between researchers and the public.
+                Discussions and public events create opportunities to share
+                research, ask questions and exchange perspectives.
               </p>
             </article>
             <article>
@@ -513,7 +500,7 @@ export default function Home() {
           </p>
           <div className="involvement-next">
             <div>
-              <h3>Interested in getting involved?</h3>
+              <h3>Opportunities to get involved</h3>
               <p>
                 This project’s own involvement programme is still being
                 developed. NIHR lists wider ways to contribute to health and
@@ -521,7 +508,7 @@ export default function Home() {
               </p>
             </div>
             <a className="outlined-link" href={sources.nihr.url}>
-              Explore opportunities at NIHR{' '}
+              NIHR involvement opportunities{' '}
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
@@ -534,8 +521,8 @@ export default function Home() {
           <div className="shell">
             <div className="resource-heading">
               <div>
-                <p className="eyebrow">Keep exploring</p>
-                <h2 id="resources-title">A few trusted places to turn.</h2>
+                <p className="eyebrow">Resources</p>
+                <h2 id="resources-title">Information and support</h2>
               </div>
               <p>Information and support from established organisations.</p>
             </div>
@@ -553,7 +540,7 @@ export default function Home() {
                 },
                 {
                   id: 'uk' as const,
-                  title: 'Find a community',
+                  title: 'Community support',
                   body: 'Information and support from Sjögren’s UK.',
                 },
               ].map((resource) => (
@@ -580,17 +567,13 @@ export default function Home() {
         >
           <div>
             <p className="eyebrow">About this project</p>
-            <h2 id="about-title">
-              Built for understanding.
-              <br />
-              Open about its limits.
-            </h2>
+            <h2 id="about-title">Sources and review</h2>
           </div>
           <div>
             <p>
-              This independent PPIE website is for people learning about
-              Sjögren’s disease and childhood-onset Sjögren’s. It has not yet
-              had independent clinical or patient review.
+              This independent website provides information about Sjögren’s
+              disease and childhood-onset Sjögren’s. Review by independent
+              clinicians, people with Sjögren’s and their families is pending.
             </p>
             <p>
               It provides general education, not a diagnosis or individual
@@ -619,7 +602,7 @@ export default function Home() {
           <a className="footer-brand" href="#main">
             Understanding Sjögren’s<span>·</span>
           </a>
-          <p>A little more understanding. At every age.</p>
+          <p>Sjögren’s disease & childhood-onset Sjögren’s</p>
           <a href="#main">Back to top ↑</a>
         </div>
       </footer>

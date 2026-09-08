@@ -14,7 +14,7 @@
 ## Co-design, clinical review and evaluation
 
 - [ ] Confirm cSjD terminology and audience priorities with the owner and intended users.
-- [ ] Identify adult and paediatric clinical reviewers and patient/family contributors.
+- [ ] Identify adult and paediatric clinical reviewers and contributors with Sjögren’s and family members.
 - [ ] Review all educational content and the quiz answer key.
 - [ ] Evaluate clarity and usefulness with young people, parents and adults with SjD.
 - [ ] Complete browser accessibility and usability testing, including keyboard, screen reader, narrow screens and 200% text enlargement.
@@ -24,7 +24,7 @@
 ## Future options, subject to co-design
 
 - [ ] An accessible body map with a complete text alternative.
-- [ ] Patient stories with informed permission and a review/removal process.
-- [ ] Additional modules guided by questions from patients and families.
+- [ ] Personal stories with informed permission and a review/removal process.
+- [ ] Additional modules guided by questions from people with Sjögren’s and their families.
 
-Deployment of the educational prototype does not mean clinical review or patient evaluation is complete.
+Deployment of the educational prototype does not mean clinical review or evaluation with people with Sjögren’s is complete.

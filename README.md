@@ -1,6 +1,6 @@
 # Understanding Sjögren’s — PPIE website
 
-An independent public learning website about Sjögren’s disease (SjD) and childhood-onset Sjögren’s disease (cSjD), for patients, families, young people and the wider public.
+An independent public learning website about Sjögren’s disease (SjD) and childhood-onset Sjögren’s disease (cSjD), for people with Sjögren’s, families, young people and the wider public.
 
 - [Live website](https://junjiepeng.github.io/sjd-public-engagement/)
 - [GitHub repository](https://github.com/JunjiePeng/sjd-public-engagement)
@@ -21,7 +21,7 @@ This checkout at `/Users/pengjunjie/Documents/ChatGPT/SjD PPIE website` is the d
 - An introduction to involvement, engagement and study participation, with genuine external opportunities.
 - Source links, review status, mobile navigation, keyboard-accessible components and reduced-motion support.
 
-This release is a working educational prototype. It has not had independent clinical or patient review, and must not be described as clinically approved or co-designed. Patient stories and project recruitment are not active. The website does not diagnose, give personalised treatment recommendations or collect health information. No analytics or browser persistence are implemented; quiz answers clear on reload. The hosting provider may process technical access logs.
+This release is a working educational prototype. It has not had independent clinical review or review by people with Sjögren’s, and must not be described as clinically approved or co-designed. Personal stories and project recruitment are not active. The website does not diagnose, give personalised treatment recommendations or collect health information. No analytics or browser persistence are implemented; quiz answers clear on reload. The hosting provider may process technical access logs.
 
 ## Develop and validate
 
@@ -48,4 +48,4 @@ The retained `.openai/hosting.json` describes static output only. Hosting remain
 
 Edit educational content and source references in `app/learning-content.ts`; layout and brief project explanations are in `app/home-content.tsx`. Update `docs/content-review.md` and the visible source-check date when checking sources again. Do not present that date as clinical sign-off. Clinical and lived-experience review are outstanding next steps.
 
-`public/images/community.jpg` is an original AI-generated editorial illustration, created for this project on 8 September 2026. It depicts fictional people, not patients, contributors or endorsers. It must not be presented as a patient photograph or testimonial.
+`public/images/community.jpg` is an original AI-generated editorial illustration, created for this project on 8 September 2026. It depicts fictional people, not actual contributors or endorsers. It must not be presented as a photograph of someone with Sjögren’s or testimonial.

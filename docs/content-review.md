@@ -2,7 +2,7 @@
 
 Release: 0.2.0. Sources checked: 8 September 2026.
 
-Status: source-checked draft, awaiting independent clinical and patient/family review. This date records access to sources, not professional clinical approval. The site makes no institutional affiliation or co-design claim.
+Status: source-checked draft, awaiting independent clinical review and review by people with Sjögren’s and their families. This date records access to sources, not professional clinical approval. The site makes no institutional affiliation or co-design claim.
 
 | Content | Supporting source | Status |
 | --- | --- | --- |
@@ -15,16 +15,20 @@ Status: source-checked draft, awaiting independent clinical and patient/family r
 | External involvement opportunities | [NIHR](https://www.nihr.ac.uk/get-involved) | Linked; no project recruitment claimed |
 | UK support | [Sjögren’s UK](https://sjogrensuk.org/) | Linked; no affiliation claimed |
 
-Conversation prompts are original suggestions to help visitors ask questions. They are not patient quotations, treatment instructions or individual medical advice. The illustration is fictional and AI-generated. Quiz responses are held only in page memory.
+Conversation prompts are original suggestions to help visitors ask questions. They are not quotations from people with Sjögren’s, treatment instructions or individual medical advice. The illustration is fictional and AI-generated. Quiz responses are held only in page memory.
 
 The website uses cSjD for childhood-onset Sjögren’s disease as in the previous planning discussion. Confirm this terminology with the owner and reviewers before formal promotion. No adult medication recommendations have been extrapolated to children.
 
+## Editorial update — 8 September 2026
+
+Revised interface and introductory wording to use person-first language and descriptive headings. Removed redundant navigation instructions and promotional filler. The formal expansion of PPIE is retained. Medical explanations, sources and the quiz answer key remain unchanged; this copy edit does not constitute clinical or lived-experience review.
+
 ## Outstanding review
 
-1. Identify adult and paediatric clinical reviewers and patient/family contributors.
+1. Identify adult and paediatric clinical reviewers and contributors with Sjögren’s and family members.
 2. Review medical explanations and the quiz answer key together.
 3. Evaluate reading level and the relevance of school and appointment prompts with young people and carers.
 4. Test navigation, keyboard operation, screen-reader announcements, mobile layout and text enlargement with intended users. Automated code checks do not replace this evaluation.
 5. Record named reviewers and dates only after actual review. Agree a future review interval and ownership.
 
-This release has automated lint, TypeScript, quiz-state and production-build validation. It has not had a browser interaction audit, screen-reader testing or patient evaluation.
+This release has automated lint, TypeScript, quiz-state and production-build validation. It has not had a browser interaction audit, screen-reader testing or evaluation with people with Sjögren’s.

@@ -4,7 +4,7 @@ Decision date: 8 September 2026.
 
 ## Purpose and audience
 
-Help patients, families, young people and the wider public understand Sjögren’s disease (SjD), including childhood-onset disease (cSjD). The website and repository are public.
+Help people with Sjögren’s, families, young people and the wider public understand Sjögren’s disease (SjD), including childhood-onset disease (cSjD). The website and repository are public.
 
 This is a separate project from the personal publication dashboard. It has its own name, navigation, design, release schedule and editorial process. Selected research may inform educational content after review.
 
@@ -23,28 +23,34 @@ Develop distinct learning paths for young people and parents or caregivers. Topi
 - Expandable answers to common questions.
 - A short misconception quiz with explanations and references.
 - Explanations of tests and appointments using plain language.
-- Patient and family experiences developed with contributors.
-- A way for patients and families to help prioritise future questions.
+- Experiences of people with Sjögren’s and their families developed with contributors.
+- A way for people with Sjögren’s and their families to help prioritise future questions.
 
 These are design ideas, not all commitments for the first release. The first fuller module should be selected through discussion with the intended audience.
 
 ## Content approach
 
-Write for understanding: short sections, familiar words, explanations of essential terminology and age-appropriate versions. Involve patients, parents and clinicians in developing and reviewing the content. Every medical explanation should have a source and review date, and distinguish established information from uncertainty. Do not infer childhood treatment advice from adult findings.
+Write for understanding: short sections, familiar words, explanations of essential terminology and age-appropriate versions. Involve people with Sjögren’s, parents and clinicians in developing and reviewing the content. Every medical explanation should have a source and review date, and distinguish established information from uncertainty. Do not infer childhood treatment advice from adult findings.
 
-Explain general health information without diagnosis or personalised treatment recommendations. The initial site links visitors to established resources and their care team. No symptom checker, patient data collection, forum or story-submission form is planned for the initial version.
+Explain general health information without diagnosis or personalised treatment recommendations. The initial site links visitors to established resources and their care team. No symptom checker, health-data collection, forum or story-submission form is planned for the initial version.
 
-Publish real patient stories only with the contributor’s informed permission and an agreed review/removal process. Clearly label any hypothetical scenario; never invent testimonials.
+Publish real personal stories only with the contributor’s informed permission and an agreed review/removal process. Clearly label any hypothetical scenario; never invent testimonials.
+
+## Editorial voice
+
+Use professional, approachable, person-first language. Refer to “people with Sjögren’s”, “people living with the condition”, “young people”, or “families and carers” as appropriate. Retain “patient” only where needed in an established formal term such as patient and public involvement and engagement (PPIE), or an accurately attributed title or quotation.
+
+Use descriptive headings that identify the subject. Remove slogans, patronising reassurance, repeated introductions and instructions that merely describe how to navigate an already clear page. For example, omit “Start with the basics, then explore a topic.” Retain useful health explanations, optional appointment questions, clear action labels and accessibility labels. Keep the tone respectful without becoming clinical or impersonal.
 
 ## Accessibility and evaluation
 
-Use readable type, keyboard-operable controls, strong contrast, mobile layouts and reduced-motion support. Check that people understand the explanations and can find information relevant to them. Review with patients and families before expanding or promoting the site as a finished resource.
+Use readable type, keyboard-operable controls, strong contrast, mobile layouts and reduced-motion support. Check that people understand the explanations and can find information relevant to them. Review with people with Sjögren’s and their families before expanding or promoting the site as a finished resource.
 
 ## Current scope
 
 Version 0.2.0 continues the existing GitHub repository in the dedicated `SjD PPIE website` folder. It implements topic explanations, separate childhood learning paths, appointment questions, a misconception quiz, a PPIE introduction and established resource links. See `content-review.md` for the source map and outstanding review; the live site clearly identifies its draft status.
 
-The body map, real patient stories and project-specific involvement recruitment remain future options. No claims of clinical approval or patient co-design are made.
+The body map, real personal stories and project-specific involvement recruitment remain future options. No claims of clinical approval or co-design with people with Sjögren’s are made.
 
 ## Sources checked on 8 September 2026
 

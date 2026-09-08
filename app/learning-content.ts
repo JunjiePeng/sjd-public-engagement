@@ -35,9 +35,9 @@ export const topics: {
 }[] = [
   {
     id: 'basics',
-    label: 'The basics',
-    kicker: 'The bigger picture',
-    heading: 'An immune system that gets its signals wrong.',
+    label: 'Overview',
+    kicker: 'Autoimmune disease',
+    heading: 'Sjögren’s and the immune system',
     body: 'Sjögren’s is a long-term autoimmune disease. The immune system normally protects us, but in Sjögren’s it attacks healthy tissue. Glands that make tears and saliva are often affected. Other parts of the body can be involved too.',
     takeaway:
       'There isn’t one single experience of Sjögren’s. Symptoms and their impact vary between people.',
@@ -46,8 +46,8 @@ export const topics: {
   {
     id: 'eyes',
     label: 'Eyes & mouth',
-    kicker: 'More than a dry feeling',
-    heading: 'Moisture has an important job.',
+    kicker: 'Tears and saliva',
+    heading: 'Dry eyes and a dry mouth',
     body: 'Tears and saliva help protect the eyes and mouth. Dry eyes can feel gritty or sore. A dry mouth can make swallowing harder and increase the risk of tooth decay.',
     takeaway:
       'Eye and dental care are part of looking after Sjögren’s. Tell your care team when dryness affects you.',
@@ -56,8 +56,8 @@ export const topics: {
   {
     id: 'fatigue',
     label: 'Fatigue & thinking',
-    kicker: 'What others may not see',
-    heading: 'Tiredness can be a big part of the picture.',
+    kicker: 'Energy and concentration',
+    heading: 'Fatigue and difficulty concentrating',
     body: 'Fatigue is a common experience in Sjögren’s. Some people also describe difficulty concentrating or thinking clearly, often called “brain fog”. These symptoms can affect daily activities even when someone looks well.',
     takeaway:
       'Invisible symptoms still matter. Describing their effect on everyday life can help others understand.',
@@ -67,7 +67,7 @@ export const topics: {
     id: 'pain',
     label: 'Joints & muscles',
     kicker: 'Movement and comfort',
-    heading: 'Pain can change an ordinary day.',
+    heading: 'Joint and muscle pain',
     body: 'Aching muscles and joints can occur in Sjögren’s. Symptoms can vary over time and may affect work, school or usual activities.',
     takeaway:
       'Speak with your healthcare team if pain or other symptoms are making daily life difficult.',
@@ -76,8 +76,8 @@ export const topics: {
   {
     id: 'wider',
     label: 'The wider body',
-    kicker: 'A whole-person view',
-    heading: 'Sjögren’s can extend beyond the glands.',
+    kicker: 'Other possible effects',
+    heading: 'Effects beyond the eyes and mouth',
     body: 'Some people have effects involving the skin, nerves, lungs or kidneys. These are possible features, not a prediction of what will happen to any one person.',
     takeaway:
       'A new symptom can have different causes. A clinician can assess it in the context of your health.',
@@ -87,10 +87,8 @@ export const topics: {
 export const audiencePaths = [
   {
     id: 'young',
-    kicker: 'Your questions matter',
-    heading: 'You can be part of the conversation.',
-    intro:
-      'You don’t need to know all the medical words to ask a good question. These prompts are a place to start.',
+    kicker: 'For young people',
+    heading: 'Understanding your condition',
     items: [
       {
         id: 'young-body',
@@ -115,10 +113,8 @@ export const audiencePaths = [
   },
   {
     id: 'caregiver',
-    kicker: 'Making room for their voice',
-    heading: 'Support them, one question at a time.',
-    intro:
-      'Use these conversation starters with your child and their care team. Let your child help decide which questions matter most.',
+    kicker: 'For parents and carers',
+    heading: 'Supporting your child',
     items: [
       {
         id: 'carer-different',
@@ -177,7 +173,7 @@ export const questions: {
 }[] = [
   {
     id: 'beyond-dryness',
-    prompt: 'Sjögren’s only affects the eyes and mouth. Is that right?',
+    prompt: 'Does Sjögren’s only affect the eyes and mouth?',
     options: [
       'Yes, it only affects those areas.',
       'No, it can affect other parts of the body.',
@@ -205,7 +201,7 @@ export const questions: {
     id: 'diagnosis',
     prompt: 'Does one blood test give a definite answer about Sjögren’s?',
     options: [
-      'Yes, one blood result settles it.',
+      'Yes, a single blood test can confirm the diagnosis.',
       'No, clinicians consider several pieces of information.',
     ],
     correct: 1,
